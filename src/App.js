@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1 className={h1}>Pinball PDX</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -54,5 +55,15 @@ function App() {
     </div>
   );
 }
+
+const h1 = `
+  text-7xl 
+  p-4 
+  shadow-lg 
+  text-white 
+  bg-gradient-to-r 
+  from-blue-500 
+  to-pink-500
+`
 
 export default App;
