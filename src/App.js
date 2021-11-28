@@ -2,9 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import Rules from './components/Rules';
 
 function App() {
-  return (
+    return ( 
+        <>
+            <Rules />
     <div className="App">
       <header className="App-header">
         <h1 className={h1}>Pinball PDX</h1>
@@ -53,6 +56,7 @@ function App() {
         </span>
       </header>
     </div>
+    </>
   );
 }
 
@@ -64,6 +68,6 @@ const h1 = `
   bg-gradient-to-r 
   from-blue-500 
   to-pink-500
-`
+`;
 
 export default App;
