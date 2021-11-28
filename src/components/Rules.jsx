@@ -4,6 +4,7 @@ const Rules = () => {
   return (
     <>
       <h1>Rules</h1>
+          <p> HEEEEEELLLLLLOOOOOOOOO WRLD </p>
     </>
   );
 };

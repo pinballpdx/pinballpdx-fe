@@ -2,12 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Rules from './components/Rules';
 
 function App() {
-  return (
+    return (
+        <>
+          <Rules />
     <div className="App">
       <header className="App-header">
-        <h1 className={h1}>Pinball PDX</h1>
+        <h1 className={h1}>Pinball PDX sfgsdfgsdfg</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -52,7 +56,8 @@ function App() {
           </a>
         </span>
       </header>
-    </div>
+            </div>
+            </>
   );
 }
 
@@ -64,6 +69,6 @@ const h1 = `
   bg-gradient-to-r 
   from-blue-500 
   to-pink-500
-`
+`;
 
 export default App;
