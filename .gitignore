@@ -19,6 +19,7 @@
 .env.production.local
 *.sqlite
 *.vs
+.prettierrc
 
 npm-debug.log*
 yarn-debug.log*
