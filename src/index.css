@@ -2,3 +2,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.week-results tr:nth-child(4n + 3),
+.week-results tr:nth-child(4n + 4) {
+  background: #e5e7eb;
+}
+
+.Logout button,
+.Login button {
+  background: none !important;
+  box-shadow: none !important;
+  color: white !important;
+  font-size: inherit !important;
+}
+
+.Logout button > div,
+.Login button > div {
+  display: none !important;
+}
+
+.Logout span,
+.Login span {
+  padding: 0 !important;
+}
