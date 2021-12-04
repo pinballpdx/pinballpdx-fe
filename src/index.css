@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.week-results tr:nth-child(4n + 3),
+.week-results tr:nth-child(4n + 4) {
+  background: #e5e7eb;
+}

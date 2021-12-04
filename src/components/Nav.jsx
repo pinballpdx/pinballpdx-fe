@@ -16,7 +16,6 @@ const Nav = () => {
 };
 
 const li = `
-  text-lg
   w-full 
   text-center 
   lg:text-left 
@@ -39,11 +38,11 @@ const active = `
 const ul = `
   flex 
   justify-between 
-  lg:flex-col 
-  my-4 ml-4
   bg-gray-900
+  lg:flex-col 
+  lg:my-4 lg:ml-4
   overflow-x-auto
-  rounded-xl
+  lg:rounded-xl
 `;
 
 export default Nav;

@@ -34,7 +34,7 @@ const h1 = `
   text-left
   text-white
   font-semibold
-  tracking-widest
+  tracking-wider
   text-2xl
 `;
 
