@@ -1,14 +1,19 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   const links = ['Standings', 'Schedule', 'Teams', 'Rules', 'News', 'About'];
 
-  const navItems = links.map((link) => <li className={li}>{link}</li>);
+  const navItems = links.map((link) => (
+    <li className={li}>{<NavLink to={link.toLowerCase()}>{link}</NavLink>}</li>
+  ));
 
   return (
     <nav className="lg:w-72">
       <ul className={ul}>
-        <li className={li + active}>Home</li>
+        <li className={li}>
+          <NavLink to="/">Home</NavLink>
+        </li>
         {navItems}
       </ul>
     </nav>
@@ -27,12 +32,6 @@ const li = `
   text-gray-300
   font-semibold
   tracking-wide
-`;
-
-const active = `
-  bg-black 
-  bg-opacity-60 
-  text-white
 `;
 
 const ul = `
